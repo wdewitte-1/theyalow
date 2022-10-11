@@ -1,5 +1,6 @@
 * {
   font-size: 62.5%;
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -25,4 +26,17 @@
   src: url(assets/fonts/opensans/OpenSans-Regular.ttf);
   src: url(assets/fonts/opensans/Apache\ License.txt);
   src: url(assets/fonts/opensans/OpenSans-SemiboldItalic.ttf);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.header {
+  background-color: antiquewhite;
+  width: 1300px;
+  height: 566px;
 }
