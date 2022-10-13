@@ -29,13 +29,12 @@ body {
   width: 1300px;
   height: 160px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 .logo-container {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
 }
 
 .logo {
@@ -60,4 +59,83 @@ body {
   filter: drop-shadow(0px 2px 0px rgba(0, 0, 0, 0.42));
   margin-left: 0.2em;
   margin-bottom: 16px;
+}
+
+.nav-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-right: 140px;
+  margin-top: 22px;
+}
+
+.nav-bar-1 {
+  width: 453px;
+  height: 41px;
+  background-image: linear-gradient(0deg, #f5c505 0%, #f5c505 100%);
+  opacity: 0.27;
+  transform: translateX(-5px) translateY(-5px);
+}
+.nav-bar-2 {
+  width: 453px;
+  height: 41px;
+  background-image: linear-gradient(0deg, #f5c505 0%, #f5c505 100%);
+  opacity: 0.27;
+  transform: translateX(-5px) translateY(-5px);
+}
+.nav-bar-3 {
+  position: absolute;
+  top: 48px;
+  right: 0px;
+  width: 453px;
+  height: 41px;
+  background-image: linear-gradient(0deg, #f5c505 0%, #f5c505 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nav-vert-div {
+  position: absolute;
+  top: 0px;
+  right: 145px;
+  width: 2px;
+  height: 41px;
+  background-image: linear-gradient(90deg, #9b7d08 0%, #9b7d08 100%);
+}
+.nav-vert-div-1 {
+  position: absolute;
+  top: 0px;
+  right: 278px;
+  width: 2px;
+  height: 41px;
+  background-image: linear-gradient(90deg, #9b7d08 0%, #9b7d08 100%);
+}
+
+.nav-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 151px;
+}
+
+.about-icon {
+  margin-left: 32px;
+}
+
+.services-icon {
+  margin-left: 29px;
+}
+
+.nav-txt {
+  margin-left: 9px;
+  font-size: 17px;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  color: #9b7d08;
+  font-family: "Segoe WP";
+  font-weight: bold;
+  text-align: center;
 }
