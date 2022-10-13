@@ -202,10 +202,12 @@ body {
 /* Icon area */
 
 .icon-area {
+  background-color: #ffffff;
+}
+.icon-area-bg {
   width: 1300px;
   height: 214px;
-  background-color: white;
-  opacity: 0.95;
+  background-image: url(assets/img/icon-area-bg.png);
   display: flex;
   align-items: center;
   justify-content: space-between;
