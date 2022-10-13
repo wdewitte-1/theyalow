@@ -119,6 +119,13 @@ body {
   align-items: center;
   justify-content: center;
   width: 151px;
+  height: 41px;
+}
+
+.nav-about:hover,
+.nav-about:active {
+  cursor: pointer;
+  background-color: aqua;
 }
 
 .about-icon {
@@ -126,7 +133,7 @@ body {
 }
 
 .services-icon {
-  margin-left: 29px;
+  margin-left: 29epx;
 }
 
 .nav-txt {
