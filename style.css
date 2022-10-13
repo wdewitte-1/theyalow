@@ -14,7 +14,8 @@
 
 body {
   display: flex;
-  /* align-items: center; */
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.644);
 }
@@ -145,4 +146,78 @@ body {
   font-family: "Segoe WP";
   font-weight: bold;
   text-align: center;
+}
+
+/* Banner slider */
+
+.banner-slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sides {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 140px;
+}
+
+.r-side {
+  position: relative;
+}
+
+.left-btn {
+  border: none;
+  width: 32px;
+  height: 56px;
+  background-image: url(assets/img/ctrl-left.png);
+  opacity: 0.71;
+}
+
+.right-btn {
+  border: none;
+  width: 32px;
+  height: 56px;
+  background-image: url(assets/img/ctrl-right.png);
+  position: absolute;
+  top: -25px;
+  right: 0px;
+}
+
+.vid-txt {
+  font-size: 63px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #f5c506;
+  font-weight: 400;
+  font-family: "Asap";
+  text-align: center;
+}
+
+.vid-txt:last-child {
+  color: white;
+}
+
+/* Icon area */
+
+.icon-area {
+  width: 1300px;
+  height: 214px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.empty {
+  display: block;
+  width: 139px;
+  height: 214px;
+}
+
+.area-div {
+  width: 2px;
+  height: 41px;
+  background-image: linear-gradient(90deg, #9b7d08 0%, #9b7d08 100%);
 }
