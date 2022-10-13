@@ -235,19 +235,19 @@ body {
 .better-design {
   width: 140px;
   height: 110px;
-  background-image: url(assets/img/icon_area-better-design.png);
+  background-image: url(assets/img/icon-cloud.svg);
 }
 
 .customise {
   width: 140px;
   height: 110px;
-  background-image: url(assets/img/icon_area-customize.png);
+  background-image: url(assets/img/icon-leaf.svg);
 }
 
 .free {
   width: 140px;
   height: 110px;
-  background-image: url(assets/img/icon_area-free.png);
+  background-image: url(assets/img/icon-paperplane.svg);
 }
 
 .icon-area-txt {
@@ -260,4 +260,10 @@ body {
   font-weight: 300;
   font-family: "Segoe WP";
   text-align: center;
+}
+
+.section-2-bg {
+  width: 1300px;
+  height: 509px;
+  background-image: url(assets/img/section-2-bg.png);
 }

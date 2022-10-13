@@ -1,0 +1,10 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 110" width="140" height="110">
+	<title>icon-cloud</title>
+	<defs>
+		<filter x="-50%" y="-50%" width="200%" height="200%" id="f1" ><feDropShadow dx="-4.330127018922194" dy="2.4999999999999996" stdDeviation="0" flood-color="#b99401" flood-opacity=".7"/></filter>
+	</defs>
+	<style>
+		.s0 { filter: url(#f1);fill: #f5c506 } 
+	</style>
+	<path id="Shape 2" fill-rule="evenodd" class="s0" d="m96.7 102h-57.9c-13.1 0-23.8-10.5-23.8-23.5 0-10.7 7.2-19.6 17.1-22.5 0-0.4-0.1-0.7-0.1-1.1 0-9.3 7.7-16.8 17.1-16.8 1.8 0 3.6 0.4 5.3 0.9 5-6.6 12.9-11 21.9-11 13 0 23.8 8.9 26.5 20.9 12.1 2.7 21.2 13.4 21.2 26.2 0 14.9-12.2 26.9-27.3 26.9zm-20.4-26.9v-20.2h-13.6v20.2h-10.4l17.2 17 17.2-17z"/>
+</svg>
