@@ -264,8 +264,23 @@ body {
   text-align: center;
 }
 
+/* Section 2 */
+
 .section-2-bg {
   width: 1300px;
   height: 509px;
   background-image: url(assets/img/section-2-bg.png);
+}
+
+.section-2-h3 {
+  margin-left: 140px;
+  padding-top: 42px;
+  width: 918px;
+  height: 130px;
+  font-size: 37px;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "PT Sans";
 }
