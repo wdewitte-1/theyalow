@@ -20,6 +20,16 @@ body {
   background-color: rgba(0, 0, 0, 0.644);
 }
 
+button {
+  padding: 0;
+  border: none;
+  outline: none;
+  font: inherit;
+  color: inherit;
+  background: none;
+}
+/* header section */
+
 .banner {
   background-image: url(assets/img/banner-bg.png);
   width: 1300px;
@@ -61,6 +71,8 @@ body {
   margin-left: 0.2em;
   margin-bottom: 16px;
 }
+
+/* Navigation bar */
 
 .nav-container {
   position: relative;
@@ -283,4 +295,96 @@ body {
   color: #ffffff;
   font-weight: 400;
   font-family: "PT Sans";
+}
+
+.section-2-box {
+  width: 1046px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  margin-left: 140px;
+}
+
+.txt-content {
+  width: 341px;
+  height: 233px;
+  background-color: #ec9e03;
+  display: flex;
+  justify-content: space-between;
+}
+
+.s2-txt {
+  padding-left: 30px;
+  width: 300px;
+  height: 307px;
+  font-size: 29px;
+  letter-spacing: 0px;
+  line-height: 38px;
+  color: #ffffff;
+  font-weight: 300;
+  font-family: "Segoe WP";
+}
+
+.plus-btn {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  align-self: flex-end;
+  padding-right: 5px;
+}
+
+.twitter-box {
+  margin-left: 33px;
+  width: 329px;
+  height: 233px;
+  background-color: #ec9e03;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.twitter {
+  margin-left: 80px;
+  width: 173px;
+  height: 150px;
+  background-image: url(assets/img/twitter.png);
+  background-repeat: no-repeat;
+  fill-opacity: 0.9;
+}
+
+.s2-txt-twitter {
+  font-size: 25px;
+  letter-spacing: 0px;
+  line-height: 38px;
+  color: #ffffff;
+  font-weight: 300;
+  font-family: "Segoe WP";
+  align-self: flex-start;
+}
+
+.date-box {
+  margin-left: 140px;
+  width: 113px;
+  height: 86px;
+  text-align: center;
+  background-color: #ddb101;
+}
+
+.date-day {
+  padding-top: 15px;
+  font-size: 51px;
+  letter-spacing: 1px;
+  line-height: 38px;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "Segoe WP";
+}
+
+.date-month {
+  text-transform: uppercase;
+  font-size: 21px;
+  letter-spacing: 0px;
+  line-height: 38px;
+  color: #b26529;
+  font-family: "Segoe WP";
 }
