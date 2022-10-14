@@ -166,6 +166,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: -7px;
 }
 
 .sides {
@@ -197,6 +198,16 @@ button {
   right: 0px;
 }
 
+.banner-vid {
+  margin-top: 15px;
+  margin-left: -20px;
+}
+
+.vid-description {
+  margin-top: -15px;
+  margin-left: 10px;
+}
+
 .vid-txt {
   font-size: 63px;
   letter-spacing: 1px;
@@ -209,6 +220,7 @@ button {
 
 .vid-txt:last-child {
   color: white;
+  padding-left: 20px;
 }
 
 /* Icon area */
@@ -253,12 +265,14 @@ button {
 }
 
 .customise {
+  padding-bottom: 15px;
   width: 140px;
   height: 110px;
   background-image: url(assets/img/icon-leaf.svg);
 }
 
 .free {
+  margin-right: 15px;
   width: 140px;
   height: 110px;
   background-image: url(assets/img/icon-paperplane.svg);
@@ -286,9 +300,9 @@ button {
 
 .section-2-h3 {
   margin-left: 140px;
-  padding-top: 42px;
+  padding-top: 28px;
   width: 918px;
-  height: 130px;
+  height: 110px;
   font-size: 37px;
   letter-spacing: 0px;
   text-transform: uppercase;
@@ -314,7 +328,8 @@ button {
 }
 
 .s2-txt {
-  padding-left: 30px;
+  padding-left: 25px;
+  padding-top: 15px;
   width: 300px;
   height: 307px;
   font-size: 29px;
@@ -325,12 +340,22 @@ button {
   font-family: "Segoe WP";
 }
 
-.plus-btn {
+.plus-btn-left {
   color: #ffffff;
   font-size: 20px;
   font-weight: bold;
   align-self: flex-end;
-  padding-right: 5px;
+  padding-right: 18px;
+  padding-bottom: 8px;
+}
+
+.plus-btn-right {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  align-self: flex-end;
+  padding-right: 10px;
+  padding-bottom: 8px;
 }
 
 .twitter-box {
@@ -345,6 +370,7 @@ button {
 
 .twitter {
   margin-left: 80px;
+  margin-top: 20px;
   width: 173px;
   height: 150px;
   background-image: url(assets/img/twitter.png);
@@ -353,6 +379,8 @@ button {
 }
 
 .s2-txt-twitter {
+  padding-top: 8px;
+  padding-left: 25px;
   font-size: 25px;
   letter-spacing: 0px;
   line-height: 38px;
@@ -387,4 +415,97 @@ button {
   line-height: 38px;
   color: #b26529;
   font-family: "Segoe WP";
+}
+
+.slider {
+  margin-left: 212px;
+  margin-top: 42px;
+}
+
+.slider input[type="range"] {
+  -webkit-appearance: none !important;
+  width: 897px;
+  height: 16px;
+  background: #ffffff8a;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  width: 200px;
+  height: 16px;
+  background: #ec9e03;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Section 3 */
+
+.s3-bg {
+  width: 1300px;
+  height: 499px;
+  background-image: url(assets/img/s3-bg.png);
+}
+
+.s3-heading {
+  padding-top: 33px;
+  width: 1300px;
+  height: 130px;
+  font-size: 43px;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  color: #f5c506;
+  font-weight: 400;
+  font-family: "PT Sans";
+  text-align: center;
+}
+
+.s3-content-box {
+  width: 1300px;
+  height: auto;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.s3-cont-left {
+  width: 603px;
+  height: 325px;
+  background-image: url(assets/img/s3-free.png);
+  margin-top: -50px;
+  margin-left: -80px;
+}
+
+.s3-cont-right {
+  width: 352px;
+  height: auto;
+  margin-left: 50px;
+  margin-top: 51px;
+}
+
+li {
+  list-style-image: url(assets/img/li-item.svg);
+  padding-left: 7px;
+  margin-bottom: 10px;
+  line-height: 20px;
+  width: 400px;
+  height: 45px;
+  font-size: 22px;
+  letter-spacing: 0px;
+  color: #a9a9a7;
+  font-weight: 400;
+  font-family: "Open Sans";
+  word-wrap: break-word;
+}
+
+/* Footer */
+
+.footer {
+  width: 1300px;
+  height: 68px;
+  background-image: url(assets/img/footer.png);
+  background-repeat: none;
+  background-size: contain;
 }
