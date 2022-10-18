@@ -26,6 +26,7 @@ html {
     font-size: 62.5%;
   }
 }
+
 @media only screen and (min-width: 112.5em) {
   html {
     font-size: 75%;
@@ -673,12 +674,70 @@ button {
 
   .tweet-box {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 0.5rem;
     width: 32rem;
     height: 23.3rem;
     background-color: #f5c507;
+  }
+
+  .bubble {
+    position: relative;
+    width: 275px;
+    height: 42px;
+    padding: 0px;
+    background: #ffffff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+  }
+
+  .bubble:after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 6px 13px 6px 0;
+    border-color: transparent #ffffff;
+    display: block;
+    width: 0;
+    z-index: 1;
+    left: -13px;
+    top: 20px;
+  }
+
+  .bubble:nth-child(2),
+  .bubble:nth-child(3) {
+    opacity: 0.6;
+  }
+
+  .bubble-txt {
+    padding-top: 0.5rem;
+    padding-left: 2rem;
+    font-size: 13px;
+    letter-spacing: 0px;
+    color: #8f8e8e;
+    font-family: "Arial";
+  }
+
+  .input-tweet {
+    width: 24rem;
+    height: 2.9rem;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+  }
+
+  .tweet-btn {
+    font-size: 15px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "Arial";
+    background-color: #d89614;
+    padding: 0.5rem;
+    border-radius: 1rem;
   }
 }
 
@@ -805,15 +864,16 @@ li {
   width: 130rem;
   height: 6.8rem;
   background-image: url(assets/img/footer.png);
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-size: contain;
 }
 
 @media screen and (max-width: 40em) {
   .footer {
-    width: 74rem;
+    width: 64rem;
     height: 6.4rem;
-    margin-left: -10rem;
-    background-size: cover;
+    background-image: url(assets/img/footer-mob.png);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
