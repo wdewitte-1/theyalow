@@ -14,15 +14,16 @@
 
 html {
   font-size: 62.5%;
+  /* original screen is 81.25em */
 }
-@media only screen and (max-width: 75em) {
+@media only screen and (max-width: 62.5em) {
   html {
     font-size: 56.25%;
   }
 }
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 40em) {
   html {
-    font-size: 50%;
+    font-size: 62.5%;
   }
 }
 @media only screen and (min-width: 112.5em) {
@@ -100,6 +101,40 @@ button {
   filter: drop-shadow(0px 2px 0px rgba(0, 0, 0, 0.42));
   margin-left: 0.2rem;
   margin-bottom: 1.6rem;
+}
+
+@media screen and (max-width: 40em) {
+  .header {
+    width: 640px;
+    height: 6.2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .banner {
+    width: 64rem;
+    background-image: none;
+    height: fit-content;
+  }
+  .logo-container {
+    height: 62px;
+    width: 186px;
+  }
+  .logo {
+    margin-left: 0.5rem;
+    margin-bottom: 0;
+    width: 4.2rem;
+    height: 4.2rem;
+    background-image: url(assets/img/logo-mob.png);
+  }
+  .logo-txt {
+    align-self: center;
+    margin-bottom: 0rem;
+    font-size: 2rem;
+    letter-spacing: 0px;
+    text-align: center;
+    filter: drop-shadow(1px 1.732px 0px rgba(0, 0, 0, 0.42));
+  }
 }
 
 /* Navigation bar */
@@ -195,6 +230,29 @@ button {
   text-align: center;
 }
 
+@media screen and (max-width: 40em) {
+  .nav-bar-1,
+  .nav-bar-2 {
+    display: none;
+  }
+  .nav-container {
+    margin: 0;
+    display: block;
+  }
+  .nav-bar-3 {
+    position: relative;
+    top: 0;
+    right: 0rem;
+    width: 45.3rem;
+    height: 6.2rem;
+  }
+
+  .nav-vert-div,
+  .nav-vert-div-1 {
+    height: 6.2rem;
+  }
+}
+
 /* Banner slider */
 
 .banner-slider {
@@ -267,6 +325,23 @@ button {
   padding-left: 2rem;
 }
 
+@media screen and (max-width: 40em) {
+  .banner-slider {
+    margin-top: 0rem;
+    max-width: 64rem;
+  }
+
+  .sides,
+  .vid-description {
+    display: none;
+  }
+  .banner-vid {
+    width: 64rem;
+    height: 32.7rem;
+    margin: auto;
+  }
+}
+
 /* Icon area */
 
 .icon-area {
@@ -277,6 +352,8 @@ button {
   width: 130rem;
   height: 21.4rem;
   background-image: url(assets/img/icon-area-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -307,6 +384,8 @@ button {
   width: 14rem;
   height: 11rem;
   background-image: url(assets/img/icon-cloud.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .customise {
@@ -314,6 +393,8 @@ button {
   width: 14rem;
   height: 11rem;
   background-image: url(assets/img/icon-leaf.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .free {
@@ -321,6 +402,8 @@ button {
   width: 14rem;
   height: 11rem;
   background-image: url(assets/img/icon-paperplane.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .icon-area-txt {
@@ -333,6 +416,32 @@ button {
   font-weight: 300;
   font-family: "Segoe WP";
   text-align: center;
+}
+
+@media screen and (max-width: 40em) {
+  .empty {
+    display: none;
+  }
+  .icon-area {
+    width: 64rem;
+    height: 17.4rem;
+  }
+  .icon-area-bg {
+    width: 64rem;
+    height: 17.4rem;
+    background-image: url(assets/img/icon-area-bg-mob.png);
+    background-size: cover;
+  }
+  .icon-box {
+    width: 21.3rem;
+    height: 17.4rem;
+  }
+  .area-div {
+    display: none;
+  }
+  .icon-area-txt {
+    font-size: 1.7rem;
+  }
 }
 
 /* Section 2 */
@@ -427,6 +536,7 @@ button {
   background-image: url(assets/img/twitter.png);
   background-repeat: no-repeat;
   fill-opacity: 0.9;
+  align-self: center;
 }
 
 .s2-txt-twitter {
@@ -439,6 +549,10 @@ button {
   font-weight: 300;
   font-family: "Segoe WP";
   align-self: flex-start;
+}
+
+.tweet-box {
+  display: none;
 }
 
 .date-box {
@@ -473,8 +587,103 @@ button {
   margin-top: 4.2rem;
 }
 
+@media screen and (max-width: 62.5em) {
+  .slider {
+    margin-top: 2.2rem;
+  }
+  .s2-vid {
+    height: 23.5rem;
+  }
+  .twitter {
+    margin: auto;
+    width: 12.3rem;
+    height: 10rem;
+    background-image: url(assets/img/twitter-mob.png);
+  }
+}
+
+@media screen and (max-width: 40em) {
+  .section-2-bg {
+    width: 64rem;
+    /* height: 50.9rem; */
+    background-image: none;
+    background-color: #ffffff;
+  }
+
+  .section-2-h3,
+  .date-box,
+  .slider,
+  .s2-txt-twitter,
+  .plus-btn-right {
+    display: none;
+  }
+
+  .section-2-box {
+    width: 64rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 0rem;
+    padding-top: 1rem;
+  }
+
+  .s2-vid {
+    padding-left: 1rem;
+  }
+
+  .txt-content {
+    margin-left: 1rem;
+
+    width: 30rem;
+    height: 23.4rem;
+    background-color: #ec9e03;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .s2-txt {
+    width: 27rem;
+    height: fit-content;
+    font-size: 2.8rem;
+    letter-spacing: 0px;
+    line-height: 3.3rem;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "Segoe WP";
+  }
+
+  .twitter-box {
+    margin-left: 0em;
+    margin-top: 0.5rem;
+    width: 32rem;
+    height: 23.3rem;
+    background-color: #f5c507;
+  }
+
+  .twitter {
+    margin: auto;
+    width: 17.3rem;
+    height: 15rem;
+    background-image: url(assets/img/twitter.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    fill-opacity: 0.9;
+  }
+
+  .tweet-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+    width: 32rem;
+    height: 23.3rem;
+    background-color: #f5c507;
+  }
+}
+
 .slider input[type="range"] {
-  -webkit-appearance: none !important;
+  appearance: none !important;
   width: 89.7rem;
   height: 1.6rem;
   background: #ffffff8a;
@@ -484,7 +693,7 @@ button {
 }
 
 .slider input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none !important;
+  appearance: none !important;
   width: 20rem;
   height: 1.6rem;
   background: #ec9e03;
@@ -525,6 +734,8 @@ button {
   width: 60.3rem;
   height: 32.5rem;
   background-image: url(assets/img/s3-free.png);
+  background-repeat: no-repeat;
+  background-size: contain;
   margin-top: -5rem;
   margin-left: -8rem;
 }
@@ -551,6 +762,43 @@ li {
   word-wrap: break-word;
 }
 
+@media screen and (max-width: 40em) {
+  .s3-cont-right {
+    display: none;
+    margin-left: 1rem;
+    width: 64rem;
+  }
+
+  .s3-bg {
+    width: 64rem;
+    height: 48.7rem;
+    background-image: url(assets/img/s3-bg.png);
+  }
+
+  .s3-heading {
+    padding-top: 3.3rem;
+    width: 64rem;
+    height: 13rem;
+    font-size: 3.9rem;
+    letter-spacing: 0rem;
+    text-transform: uppercase;
+    color: #f5c506;
+    font-weight: 400;
+    font-family: "PT Sans";
+    text-align: center;
+  }
+
+  .s3-content-box {
+    margin: auto;
+    width: 64rem;
+    height: auto;
+  }
+
+  .s3-cont-left {
+    margin: auto;
+  }
+}
+
 /* Footer */
 
 .footer {
@@ -559,4 +807,13 @@ li {
   background-image: url(assets/img/footer.png);
   background-repeat: none;
   background-size: contain;
+}
+
+@media screen and (max-width: 40em) {
+  .footer {
+    width: 74rem;
+    height: 6.4rem;
+    margin-left: -10rem;
+    background-size: cover;
+  }
 }
